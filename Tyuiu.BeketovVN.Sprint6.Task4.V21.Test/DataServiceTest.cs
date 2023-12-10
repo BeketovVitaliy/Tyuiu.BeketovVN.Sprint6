@@ -19,17 +19,17 @@ namespace Tyuiu.BeketovVN.Sprint6.Task4.V21.Test
             double[] valueWaitArray;
             valueWaitArray = new double[len];
 
-            valueWaitArray[0] = 3.30;
-            valueWaitArray[1] = -12.37;
-            valueWaitArray[2] = -14.02;
-            valueWaitArray[3] = -5.57;
-            valueWaitArray[4] = 0.65;
+            valueWaitArray[0] = 28.05;
+            valueWaitArray[1] = 22.27;
+            valueWaitArray[2] = 17.01;
+            valueWaitArray[3] = 12.35;
+            valueWaitArray[4] = 7.51;
             valueWaitArray[5] = 0;
-            valueWaitArray[6] = -0.65;
-            valueWaitArray[7] = 5.57;
-            valueWaitArray[8] = 14.02;
-            valueWaitArray[9] = 12.37;
-            valueWaitArray[10] = -3.30;
+            valueWaitArray[6] = 1.62;
+            valueWaitArray[7] = -7.03;
+            valueWaitArray[8] = -12.99;
+            valueWaitArray[9] = -17.55;
+            valueWaitArray[10] = -21.43;
 
             double[] res;
             res = new double[len];
