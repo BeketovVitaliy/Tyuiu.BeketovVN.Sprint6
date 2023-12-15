@@ -290,6 +290,7 @@
             this.textBoxVisot_BVN.Name = "textBoxVisot_BVN";
             this.textBoxVisot_BVN.Size = new System.Drawing.Size(100, 22);
             this.textBoxVisot_BVN.TabIndex = 1;
+            this.textBoxVisot_BVN.Text = "3";
             // 
             // textBoxShir_BVN
             // 
@@ -297,6 +298,7 @@
             this.textBoxShir_BVN.Name = "textBoxShir_BVN";
             this.textBoxShir_BVN.Size = new System.Drawing.Size(100, 22);
             this.textBoxShir_BVN.TabIndex = 1;
+            this.textBoxShir_BVN.Text = "3";
             // 
             // splitterThree_BVN
             // 

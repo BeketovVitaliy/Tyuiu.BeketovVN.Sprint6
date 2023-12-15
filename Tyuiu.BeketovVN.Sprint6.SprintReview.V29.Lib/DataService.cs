@@ -20,7 +20,12 @@ namespace Tyuiu.BeketovVN.Sprint6.SprintReview.V29.Lib
                 for (int i = 0; i < n; i++)
                 {
                     array[i, j] = currentValue;
-                    currentValue = rand.Next(currentValue + 1, n2); // Генерация следующего числа больше предыдущего
+
+                    // Изменения, чтобы currentValue + 1 не превышало n2
+                    if (currentValue + 1 <= n2)
+                    {
+                        currentValue = rand.Next(currentValue + 1, n2);
+                    }
                 }
             }
 
@@ -29,7 +34,6 @@ namespace Tyuiu.BeketovVN.Sprint6.SprintReview.V29.Lib
 
         public int GetMatrix(int[,] array, int c, int k, int l)
         {
-            
             int sum = 0;
             for (int j = k; j <= l; j++)
             {
@@ -37,7 +41,6 @@ namespace Tyuiu.BeketovVN.Sprint6.SprintReview.V29.Lib
             }
 
             return sum;
-           
         }
     }
 }

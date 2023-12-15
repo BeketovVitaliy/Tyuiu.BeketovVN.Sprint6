@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
 using Tyuiu.BeketovVN.Sprint6.SprintReview.V29.Lib;
+using System.Security.Cryptography.X509Certificates;
 
 namespace Tyuiu.BeketovVN.Sprint6.SprintReview.V29
 {
@@ -18,7 +19,6 @@ namespace Tyuiu.BeketovVN.Sprint6.SprintReview.V29
         {
             InitializeComponent();
         }
-        DataService ds = new DataService();
         static int m;
         static int n;
         static int n1;
@@ -36,6 +36,7 @@ namespace Tyuiu.BeketovVN.Sprint6.SprintReview.V29
 
         private void buttonCreat_BVN_Click(object sender, EventArgs e)
         {
+            DataService ds = new DataService();
             try
             {
                 int k = Convert.ToInt32(textBoxK_BVN.Text);
@@ -60,12 +61,13 @@ namespace Tyuiu.BeketovVN.Sprint6.SprintReview.V29
 
         private void buttonChange_BVN_Click(object sender, EventArgs e)
         {
+            DataService ds = new DataService();
             int m = Convert.ToInt32(textBoxShir_BVN.Text);
             int n = Convert.ToInt32(textBoxVisot_BVN.Text);
             int n1 = Convert.ToInt32(textBoxStart_BVN.Text);
             int n2 = Convert.ToInt32(textBoxStop_BVN.Text);
 
-            int[,] arrayValues = ds.GetRandomMatrix(n, m, n1, n2);
+            arrayValues = ds.GetRandomMatrix(n, m, n1, n2);
 
             dataGridViewMatrix_BVN.RowCount = n;
             dataGridViewMatrix_BVN.ColumnCount = m;
